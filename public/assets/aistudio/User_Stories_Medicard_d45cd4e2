@@ -1,0 +1,86 @@
+BILLING AGENT DOMAIN
+Invoice
+Generation &
+ Delivery
+Supervisor 
+Validation
+Post Billing 
+in 
+Billing Systems
+   3 Way Match 
+Validation
+Billing Agent
+User Story
+person
+Billing Agent
+Uploads Docs to Billing Automation App which autonomously extracts data from the PDFs and provides him data in a single view
+Data 
+Ingestion
+Billing Automation App
+3-Way Match
+Automated Document Verification
+INTRANET
+User Story
+person
+Billing Agent
+Billing Automation app assists the billing agent in validating the data in the PDF documents against the legacy systems
+Billing Supervisor
+Billing Automation App
+3-Way Match
+Automated Document Verification
+
+Post Billing
+Automated posting in Legacy Billing Systems (PBS/CPBS/ABS)
+User Story
+
+person
+Billing Agent
+Billing Agent triggers Billing Automation app to fill the required details in billing legacy systems (PBS/CPBS/ABS)
+User Story
+person
+Billing Supervisor
+Billing Supervisor re-validates the data entered into billing systems against PDFs, Intranet, SOB 
+User Story
+person
+Billing Supervisor
+Supervisor creates NAV invoice and notifies agent to email customer
+NAV
+BILLING SUPERVISOR DOMAIN
+User Story
+person
+Billing Agent
+Billing Agent sends the invoice to customer via Email
+BILLING AGENT DOMAIN
+Billing Process
+
+Intelligent Collections System
+Automated DPD Triaging
+Automated
+Dunning Reminders 
+Update Collections Data
+Health Fund Monitoring
+Complete Collections
+Update Collections Data
+Dispute Management
+Update Collections Data
+Payment Commitments / SPP Requests
+Collections Agent
+Automated AR Data Retrieval from NAV
+Collections Process 
+Automated Data Sync to NAV
+
+Intelligent Reconciliation System
+Reconciliation Agent
+Automated Retrieval of Daily Collections Summary Data  from NAV
+Handling Tallied Entries
+Data Validation 
+Variance Analysis and Mismatch Identification
+Summary Of Reconciliation Preparation
+Paid Invoice Validation against Billing System
+Customer Ledger Verification in NAV
+Validating Discrepancies / Negative AR
+Disputed/Blocked Invoice Check
+Data Validation
+Reconciliation Process 
+SCM Generation
+NAV

@@ -1,0 +1,8 @@
+{
+  "name": "2nd copy of Medicard Intelligent Revenue Ecosystem",
+  "description": "Executive transformation proposal and interactive simulation for Medicard Philippines billing, collections, and reconciliation operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
