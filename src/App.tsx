@@ -74,19 +74,19 @@ export default function App() {
           onStartTour={handleStartTour}
         />
 
-        {/* As-Is Bottlenecks Context Hub (Highlights Triplicate 3-Way Match & Discovery Findings) */}
-        <AsIsBottleneckHub
-          activeStream={activeStream}
-          onSelectStream={handleSelectStream}
-          onLaunchSimulation={handleLaunchSimulation}
-        />
-
         {/* Transformed User Journey Centerstage (Simulation Theater, Comparison & 3-Layer Mechanics) */}
         <TransformedJourneysCenterstage
           controlledStream={activeStream}
           onStreamChange={handleSelectStream}
           activePersonaId={activePersonaId}
           controlledStepTrigger={controlledStepTrigger}
+        />
+
+        {/* Audited As-Is Bottlenecks Context Hub (Optional Deep Dive Audit at the end of the page) */}
+        <AsIsBottleneckHub
+          activeStream={activeStream}
+          onSelectStream={handleSelectStream}
+          onLaunchSimulation={handleLaunchSimulation}
         />
       </main>
 

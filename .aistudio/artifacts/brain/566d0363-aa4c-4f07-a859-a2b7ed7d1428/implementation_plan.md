@@ -1,77 +1,67 @@
-# Transformed Revenue Operations: In-Situ Process Tour, Calibrated Operational Metrics & Client Pitch
+# Streamlined Page Architecture & Docked Floating Process Tour
 
-Executive client proposal and practitioner-empowering interactive demonstration for Medicard Philippines revenue, billing, and reconciliation operations.
+Refining the application structure to present an immediate, high-impact transformed journey, re-architecting the guided tour into a reliable docked floating control bar, and ensuring a crisp, executive-grade client presentation.
 
 ***
 
 ### User Review & Critical Decisions
 
 > [!IMPORTANT]
-> **Critical Client-Side Operational Governance (Confirmed)**:
-> - **Zero FTE / Headcount Reduction Mention**: Per client feedback, since this platform will be viewed directly by client operations agents and team members, **all references to FTE reduction, headcount cuts, labor optimization, and capacity shrinkage are strictly excluded**.
-> - **Focus Exclusively on Operational Excellence**:
->   - **Revenue Velocity & Cash Flow**: `~7–10% DSO reduction` and `~10–15% indicative collections uplift in Year 1`.
->   - **Coverage & Reach**: `~85–90% Day 1 outreach coverage` across due accounts.
->   - **Operational Ease & Quality of Work**: Eliminating repetitive manual re-entry, resolving the triplicate 3-way match, eliminating untracked personal mobile calls, and replacing crashing Excel macros.
->   - **Cycle Time Velocity**: Reducing invoice and reconciliation turnaround from `~3–5 working days` to `same-day / < 1 hour`.
->   - **Scale**: Supporting `970,000+ active healthcare lives` across 7 commercial billing substreams.
-> - **In-Situ Spotlight Guided Tour**: An interactive walkthrough that anchors directly to the on-page elements (with spotlight glow and anchored tooltips) and **actively triggers the live simulation steps** so client stakeholders see the actual workflow in motion.
-> - **Conservative Indicative Ranges**: All quantitative metrics will be presented with tildes (`~`) and conservative operational ranges.
+> The user confirmed the following decisions during Phase 1 clarification:
+> - **Section Re-Ordering**: Move the "Operational Friction: As-Is Bottlenecks vs To-Be Automation" section to the **very end of the page as an optional deep dive** right before the footer. This puts the **Live Simulation Theater centerstage** immediately below the Hero and Persona Spotlight, keeping the client's first impression crisp, action-oriented, and modern.
+> - **Docked Floating Control Bar for Guided Tour**: Replace fragile absolute coordinate tooltips with a sleek, viewport-docked floating control bar (fixed at the bottom-center of the screen). This eliminates positioning clipping, mobile/viewport glitches, and scroll desynchronization, while maintaining an active spotlight glow on the referenced live element and automatically scrolling it into focus.
+> - **6 Detailed Steps per Process Stream**: Curate 6 high-value steps covering the practitioner persona, root-cause friction, and the 4 live operational simulation stages with real-time step execution in Microsoft Dynamics NAV 2016.
+> - **Zero FTE / Headcount Reduction Mention**: Re-affirm the strict exclusion of all FTE or headcount metrics, focusing entirely on DSO reduction, collections uplift, cycle time compression, and eliminating tedious clerical duplication.
 
 ***
 
 ### 1. Overview & Core Concept
 
 #### What It Does
-- **Practitioner-Centric Operational Transformation**: Demonstrates how modern automation, AI document ingestion, and direct Microsoft Dynamics NAV 2016 ERP integration elevate day-to-day operations for billing specialists, collections agents, and reconciliation analysts.
-- **Root Cause & Context-First Narrative**: Establishes why legacy processes create friction (e.g. performing the exact same 3-way match 3 separate times across disconnected applications) and how the transformed solution empowers teams to focus on customer service and complex exceptions.
-- **In-Situ Element-Anchored Process Tour**: A guided tour that moves directly across the application's actual DOM components, explains the operational context, and automatically drives the live simulation steps in real-time.
+- **Crisp Client Flow**:
+  1. **Header & Navigation Ribbon**: Stream selector, active operator badge, and "Guided Tour" trigger.
+  2. **Journey Hero & Persona Spotlight**: Value metrics (`~10–15% uplift`, `~7–10% DSO`), executive overview, and interactive persona switcher (Maria Santos, Carlos Reyes, Elena Cruz).
+  3. **Transformed Journeys Centerstage**: Immediate interactive simulation theater showing split-screen execution (San Miguel ₱5.0M, URC ₱2.5M, Nestlé ₱4.0M) and live NAV 2016 ERP synchronization, followed directly by the 3-Layer Solution Mechanics.
+  4. **Optional As-Is Bottlenecks Deep Dive**: Positioned cleanly at the end of the page for stakeholders who want to inspect the triplicate 3-way match, unmonitored outreach, and macro instability in detail.
+  5. **Footer**: Clean copyright and corporate attribution.
 
-#### Target Personas & Focus Areas
-- **Maria Santos (Senior Billing Specialist & Operations Lead)**: Focuses on eliminating triplicate manual 3-way matching, ensuring contract rate accuracy, and dual-control supervisor validation before NAV 2016 posting.
-- **Carlos Reyes (Corporate Collections Specialist)**: Focuses on automated DPD aging triaging, structured omnichannel dunning, eliminating personal mobile phone calls, and tracking corporate Health Fund balances (&lt;50% threshold alerts).
-- **Elena Cruz (Senior Reconciliation Analyst)**: Focuses on replacing fragile desktop VBA macros with structured cloud pipelines, achieving `~60–70%` straight-through clearing on tallied entries, and AI vision extraction of BIR 2307 withholding certificates.
+- **Docked Floating Guided Tour**:
+  - Anchors cleanly at the bottom-center of the viewport (`fixed bottom-6 left-1/2 -translate-x-1/2 z-50`).
+  - Highlights the target element on the page with a high-contrast glowing spotlight ring.
+  - Features real-time simulation execution: clicking "Run Step" or "Next" actually triggers the live step in the simulation theater and updates the NAV 2016 general ledger panel.
 
 ***
 
 ### 2. User Experience & Visual Design
 
-#### A. Interactive In-Situ Spotlight Tour (`InSituGuidedTour.tsx`)
-1. **Element Anchoring**:
-   - Calculates target bounding boxes dynamically (`#journey-hero`, `#persona-spotlight`, `#bottleneck-context`, `#stage-step-1`, `#stage-step-2`, `#stage-step-3`, `#stage-step-4`, `#nav-erp-window`, `#architecture`).
-   - Renders a floating, anchored tooltip card positioned adjacent to the active element.
-   - Highlights the target element with a high-contrast focus ring (`ring-2 ring-[#FF5500] ring-offset-4 ring-offset-neutral-900`) and subtle backdrop dim.
-   - Smoothly auto-scrolls the active element into the center of the viewport.
+#### A. Page Layout Re-Ordering
+- **Before**: Header $\rightarrow$ Hero $\rightarrow$ As-Is Bottleneck Hub (Long section before simulation) $\rightarrow$ Centerstage Simulator $\rightarrow$ Footer.
+- **After (Crisp & Focused)**:
+  1. **Header**: Clean top bar with stream links and "Guided Tour" CTA.
+  2. **Hero & Persona Spotlight**: Sets practitioner context in under 30 seconds.
+  3. **Transformed Journey Centerstage**: Immediate live simulation theater + 3-Layer Solution Architecture.
+  4. **Operational Bottlenecks Deep Dive (As-Is vs To-Be)**: Positioned at the bottom for optional forensic audit review.
+  5. **Footer**.
 
-2. **Active Step Driving**:
-   - As the tour progresses through the simulation stages, it triggers the real simulation engine in `TransformedJourneysCenterstage`, advancing the live accounting state, populating activity logs, and showing the live NAV 2016 ledger updates.
-   - Provides options to "Next Step", "Previous Step", "Run Automation", or "Close Tour".
+#### B. Docked Floating Tour Architecture (`InSituGuidedTour.tsx`)
+- **Docked Container**: Sleek, glass-morphic dark/light panel (`bg-neutral-900 text-white rounded-2xl shadow-2xl border border-neutral-700 max-w-xl w-[92vw] sm:w-[580px]`).
+- **Target Spotlight**: When a step targets an element (e.g. `#stage-step-2`), the element receives a vibrant spotlight ring (`ring-3 ring-[#FF5500] ring-offset-2 ring-offset-neutral-900`) and the window smoothly scrolls the element into view.
+- **Live Step Syncing**:
+  - Step 1: Practitioner Persona Spotlight (`#persona-spotlight`)
+  - Step 2: Operational Bottleneck Context (`#bottleneck-context` or inline brief)
+  - Step 3: Document Ingestion & OCR (`#stage-step-1`) $\rightarrow$ triggers Stage 1
+  - Step 4: Autonomous 3-Way Rate Match (`#stage-step-2`) $\rightarrow$ triggers Stage 2
+  - Step 5: Dual-Control Supervisor Gate (`#stage-step-3`) $\rightarrow$ triggers Stage 3
+  - Step 6: Live NAV 2016 ERP Sync & Dispatch (`#nav-erp-window`) $\rightarrow$ triggers Stage 4
+- **Controls**:
+  - "Run Live Step" / "Next Step" primary action.
+  - "Back" button, Step progress dots (1 to 6), and "Exit Tour".
+  - Quick stream switcher (Billing / Collections / Recon) directly inside the tour bar.
 
-3. **Stream-Specific Journeys**:
-   - Allows stakeholders to select whether to tour **Billing Operations**, **Collections Operations**, or **Reconciliation Operations**.
-
-#### B. Calibrated Operational Metrics (Zero FTE/Headcount References)
-- **Billing Stream**:
-  - Legacy Batch Handle Time: `~18–25 minutes` per corporate batch
-  - Transformed Batch Handle Time: `~2–4 minutes` (automated OCR and rate matching in `~15–30 seconds` plus lead review)
-  - Straight-Through Auto-Match Rate: `~85–92%` (remaining `~8–15%` flagged for supervisor exception review)
-  - Manual Keying Effort: `~75–85% reduction` in repetitive keystrokes
-  - Cycle Time: `~3–5 working days` down to `same-day / < 1 hour`
-- **Collections Stream**:
-  - Day 1 Customer Reach: `~85–90% coverage` of due accounts on Day 1
-  - Annual Collections Uplift: `~10–15% indicative uplift in Year 1`
-  - Cash Velocity: `~7–10% DSO reduction`
-  - Health Fund Protection: Real-time alerts when enterprise replenishment funds drop below `~50–60% threshold`
-- **Reconciliation Stream**:
-  - Auto-Clearing Rate: `~60–70% of tallied entries cleared straight through`
-  - Variance Research TAT: `~3–5 days` collapsed to `~2–4 hours`
-  - Stability: `100% elimination of desktop Excel macro crashes and file corruptions`
-- **Portfolio Scale**:
-  - Supporting `970,000+ active healthcare lives` across 7 commercial billing streams
-
-#### C. Professional Client Pitch Language
-- Authoritative, respectful consulting prose suited for both executive leadership and operational staff.
-- Emphasizes **dual-control audit safety**, **system interoperability with NAV 2016**, **exception-based review**, and **eliminating tedious clerical rework**.
+#### C. Bug Fixes & QA Hardening
+- **Fix 1: Eliminating Coordinate Drift**: By docking the tour bar to the viewport bottom, tooltips will never render offscreen, overlap behind sticky headers, or jump during page scroll.
+- **Fix 2: Synchronizing Tour Triggers with Simulation State**: Fix the timing so that when the tour enters a simulation step, the stage automatically highlights and executes cleanly without requiring double clicks.
+- **Fix 3: ViewMode Resiliency**: Ensure that starting the tour automatically switches the Centerstage viewMode to `'overview'` (Live Interactive Simulation), guaranteeing all target DOM elements exist.
 
 ***
 
@@ -79,9 +69,9 @@ Executive client proposal and practitioner-empowering interactive demonstration 
 
 | Decision | Chosen Approach | Why | Rejected Alternative |
 | :--- | :--- | :--- | :--- |
-| **Operational Framing** | Strict exclusion of FTE/headcount reduction metrics | The pitch will be viewed by client-side operations agents; framing around FTE cuts creates fear and resistance, whereas framing around DSO, collections uplift, and eliminating tedious clerical rework creates strong practitioner buy-in. | Highlighting headcount reductions (strictly rejected per user instruction). |
-| **Tour Interaction** | In-situ floating tooltip anchored to live DOM elements with simulation triggering | Directly responds to user feedback that a static detached popup does not guide through the actual user journey. | Detached central modal popup. |
-| **Metric Calibration** | Indicative ranges with tildes (`~`) and benchmark references | Provides defensible, realistic operational targets that build credibility with client leadership. | Single-point absolute figures or exaggerated claims. |
+| **Section Ordering** | Move As-Is Bottlenecks to the bottom of the page | Client wants a crisp, punchy presentation. Starting with the live simulation theater immediately after the persona switcher maximizes executive engagement. | Leaving As-Is bottlenecks at the top (rejected: slows down reaching the actual solution). |
+| **Tour Format** | Docked floating control bar with target spotlight | 100% immune to CSS coordinate clipping, scroll desync, and screen-width overflow bugs. | Absolute tooltip popovers (rejected: prone to layout clipping and scroll bugs). |
+| **Step Count** | 6 focused operational steps | Provides complete coverage of practitioner, friction, and all 4 simulation stages without feeling overwhelming. | 15+ micro-step tours or shallow 2-step summaries. |
 
 ***
 
@@ -91,33 +81,37 @@ Executive client proposal and practitioner-empowering interactive demonstration 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │                            App.tsx (Root State)                              │
 ├──────────────────────────────────────────────────────────────────────────────┤
-│  Top Bar (Header.tsx)           │  - Stream Selector, Operator Badge, Tour CTA│
-├─────────────────────────────────┴────────────────────────────────────────────┤
-│  JourneyHero.tsx                │  - Operational Metrics (+10-15%, ~7-10% DSO)│
-│                                 │  - PersonaSpotlight (Maria, Carlos, Elena)  │
+│  Top Bar (Header.tsx)                                                        │
 ├──────────────────────────────────────────────────────────────────────────────┤
-│  AsIsBottleneckHub.tsx          │  - Triplicate 3-Way Match Root Cause Context│
-│                                 │  - Operational Ease & Quality of Work Shift │
+│  1. JourneyHero.tsx & PersonaSpotlight.tsx (Executive Context & Practitioner)│
 ├──────────────────────────────────────────────────────────────────────────────┤
-│  TransformedJourneysCenterstage │  - Interactive Simulation Theater Console   │
-│                                 │  - Live Step Execution & NAV 2016 ERP Sync  │
-│                                 │  - DOM Target IDs for In-Situ Spotlight Tour│
-├─────────────────────────────────┴────────────────────────────────────────────┤
-│  InSituGuidedTour.tsx (NEW)                                                  │
-│  - Calculates getBoundingClientRect() of live DOM elements                    │
-│  - Anchors floating card with dynamic positioning (top/bottom/side)           │
-│  - Triggers demoStep in Centerstage to advance live simulation in real time  │
+│  2. TransformedJourneysCenterstage.tsx (Interactive Simulation Theater)      │
+│     - Stage 1: Document Ingestion (#stage-step-1)                            │
+│     - Stage 2: Autonomous 3-Way Match (#stage-step-2)                        │
+│     - Stage 3: Supervisor Approval Gate (#stage-step-3)                      │
+│     - Stage 4: Dynamics NAV 2016 Real-Time Sync (#nav-erp-window)           │
+│     - 3-Layer Solution Architecture (#architecture-section)                  │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  3. AsIsBottleneckHub.tsx (MOVED: Optional Deep Dive at Bottom of Page)      │
+│     - Triplicate 3-Way Match Redundancy Deep Dive                            │
+│     - Collections & Reconciliation Root Causes                               │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  4. InSituGuidedTour.tsx (Docked Floating Control Bar at Viewport Bottom)   │
+│     - Spotlight focus ring on active element                                 │
+│     - Smooth auto-scroll to element                                          │
+│     - Direct demoStep trigger execution in Centerstage                       │
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
 
 #### Step Execution Plan
-1. **Purge all FTE & Headcount Reduction Metrics** across `transformedJourneyData.ts`, `personaData.ts`, `JourneyHero.tsx`, `AsIsBottleneckHub.tsx`, and `TransformedJourneysCenterstage.tsx`. Replace with DSO reduction, collections uplift, handle time velocity, and operational ease.
-2. **Implement `InSituGuidedTour.tsx`**:
-   - Live DOM element bounding calculations, viewport offset adjustment, focus ring outline, and real-time step execution callbacks.
-3. **Enhance `TransformedJourneysCenterstage.tsx`**:
-   - Add target IDs for each stage (`#stage-step-1`, `#stage-step-2`, `#stage-step-3`, `#stage-step-4`, `#nav-erp-window`, `#architecture`).
-   - Expose trigger handlers to allow the tour to drive the simulation.
-4. **Update `App.tsx` and `Header.tsx`**:
-   - Wire `InSituGuidedTour` into the root layout and link all controls.
-5. **Verify Build**:
-   - Run `compile_applet` and `lint_applet` together, restart dev server.
+1. **Re-Order Sections in `src/App.tsx`** [COMPLETED]:
+   - Moved `<AsIsBottleneckHub>` to immediately follow `<TransformedJourneysCenterstage>`, right before `<Footer>`, providing an immediate interactive simulation experience followed by an optional audited deep dive.
+2. **Re-Engineer `InSituGuidedTour.tsx`** [COMPLETED]:
+   - Replaced fragile absolute coordinate tooltips with a docked floating control bar at `fixed bottom-5 left-1/2 -translate-x-1/2 z-50`.
+   - Implemented fixed-position spotlight halo (`position: 'fixed'`) that precisely highlights target elements (`#persona-spotlight`, `#bottleneck-context`, `#stage-step-1` to `#stage-step-4`, `#nav-erp-window`) and smooth auto-scrolling with `scrollIntoView({ behavior: 'smooth', block: 'center' })`.
+   - Wired live simulation execution triggers: clicking "Run Stage in Simulator & Next" executes the stage in real time in the Centerstage theater and live NAV 2016 accounting record.
+3. **QA & Hardening in `TransformedJourneysCenterstage.tsx`** [COMPLETED]:
+   - Added viewMode auto-switch to `'overview'` when tour triggers so that stage cards and ERP window DOM elements are always mounted and visible.
+   - Removed any and all mentions of FTE or headcount reduction.
+4. **Compile, Lint & Dev Server Verification** [COMPLETED]:
+   - Code verified for TypeScript standards and Tailwind CSS fidelity.

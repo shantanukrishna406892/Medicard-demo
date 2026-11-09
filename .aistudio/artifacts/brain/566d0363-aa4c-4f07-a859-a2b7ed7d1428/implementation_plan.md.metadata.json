@@ -1,6 +1,6 @@
 {
-  "summary":  "Revised Implementation Plan removing all FTE reduction/headcount optimization metrics and focusing exclusively on operational ease, DSO acceleration, collections uplift, eliminating manual repetition (such as the triple 3-way match), and in-situ element-anchored process touring.",
-  "updatedAt":  "2026-11-07T05:55:53.896433543Z",
+  "summary":  "Implementation Plan for Streamlined Page Architecture, Docked Floating Guided Tour Bar, and Bug-Free Live Simulation Synchronization:\n1. Re-order sections to keep the client experience crisp and focused: Hero & Persona Spotlight -> Transformed Journey Centerstage (Live Simulation Theater & 3-Layer Solution Mechanics) -> As-Is Bottlenecks as an optional deep dive at the end -> Footer.\n2. Re-architect the Guided Tour into a docked floating control bar at the bottom of the viewport with spotlight element ring, reliable auto-scroll, and 1-click live step execution across 6 detailed steps.\n3. Fix all tour synchronization bugs between the tour controller and the Centerstage simulation state across all 3 streams (Billing, Collections, Reconciliation).\n4. Maintain strict exclusion of all FTE/headcount metrics, using realistic conservative ranges (~10-15% collections uplift, ~7-10% DSO, ~80-85% turnaround gain).",
+  "updatedAt":  "2026-11-09T18:55:55.746407525Z",
   "requestFeedback":  true,
   "userFacing":  true
 }

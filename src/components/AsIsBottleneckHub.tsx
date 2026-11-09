@@ -29,7 +29,7 @@ export const AsIsBottleneckHub: React.FC<AsIsBottleneckHubProps> = ({
   const currentBottleneck = BOTTLENECK_DETAILS[activeStream];
 
   return (
-    <section id="bottleneck-context" className="py-12 bg-white border-b border-neutral-200">
+    <section id="bottleneck-context" className="py-12 bg-white border-b border-neutral-200 scroll-mt-14">
       <div className="max-w-[1440px] w-full mx-auto px-4 sm:px-6 lg:px-12">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
@@ -37,18 +37,18 @@ export const AsIsBottleneckHub: React.FC<AsIsBottleneckHubProps> = ({
             <div className="flex items-center gap-2 text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-2">
               <span className="text-amber-600 font-bold flex items-center gap-1.5">
                 <AlertTriangle className="w-3.5 h-3.5 text-amber-500" />
-                Root Cause Context
+                Audited Baseline Context
               </span>
               <span aria-hidden="true" className="text-neutral-300">·</span>
               <span>Medicard Discovery Diagnosis</span>
               <span aria-hidden="true" className="text-neutral-300">·</span>
-              <span>Why Transformation is Needed</span>
+              <span>Deep Dive Root Causes</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-display font-bold text-neutral-900 tracking-tight">
               Operational Friction: As-Is Bottlenecks vs To-Be Automation
             </h2>
             <p className="text-sm sm:text-base text-neutral-600 mt-1 max-w-3xl">
-              Examine the critical bottlenecks uncovered during discovery before experiencing the live simulation. See why manual checks, unmonitored outreach, and Excel macros create systemic delays.
+              Audit the verified operational friction uncovered during discovery that informed the transformed architecture above. Review why manual checks, unmonitored outreach, and Excel macros created systemic cycle delays.
             </p>
           </div>
 
@@ -186,7 +186,7 @@ export const AsIsBottleneckHub: React.FC<AsIsBottleneckHubProps> = ({
                     onClick={onLaunchSimulation}
                     className="self-start lg:self-center inline-flex items-center gap-2 px-4 py-2.5 bg-neutral-900 hover:bg-neutral-800 text-white rounded-xl text-xs font-bold shadow-sm transition-all cursor-pointer whitespace-nowrap shrink-0"
                   >
-                    <span>Simulate Transformed Journey</span>
+                    <span>Return to Live Simulation Theater</span>
                     <ArrowRight className="w-4 h-4 text-[#FF5500]" />
                   </button>
                 )}

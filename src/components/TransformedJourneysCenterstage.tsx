@@ -215,6 +215,7 @@ export const TransformedJourneysCenterstage: React.FC<TransformedJourneysCenters
   // Watch for external step triggers from the in-situ guided tour
   useEffect(() => {
     if (controlledStepTrigger !== undefined && controlledStepTrigger !== null) {
+      setViewMode('overview');
       if (controlledStepTrigger >= 0 && controlledStepTrigger < 4) {
         const stepNum = controlledStepTrigger + 1;
         const stepKey = `step${stepNum}` as 'step1' | 'step2' | 'step3' | 'step4';
